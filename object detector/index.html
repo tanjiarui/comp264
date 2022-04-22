@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"/>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Object Detector</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<script>function lti_launch( vars, target ) {
+						var query = '';
+						var new_tab = false;
+
+						for(var key in vars) {
+							if(query.length == 0) {
+								query += '?' + key + '=' + encodeURIComponent(vars[key]);
+							}
+							else {
+								query += '&' + key + '=' + encodeURIComponent(vars[key]);
+							}
+						}
+
+						var url = '/d2l/customization/pearsonlti/6606/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script><script src="/d2l/im/d2lreader/D2LReader_v2.js?rsUrl=https%3a%2f%2fapp.readspeaker.com%2fcgi-bin%2frsent&amp;custId=11151&amp;lang=en_us&amp;voice=Kate&amp;listenText=Listen&amp;listenTitle=Listen+to+this+page&amp;v=20.22.2.35240"></script><script>
+				const allowDetach = true;
+
+				window.rsConf = {
+					general: { usePost: true },
+					ui: {
+						disableDetachment: !allowDetach,
+						playbackDetach: allowDetach,
+						tools: { detachment: allowDetach }
+					}
+				};
+			</script><script src="https://cdn1.readspeaker.com/script/11151/webReaderForEducation/brightspace/v3.3/webReader.js?pids=wr&amp;dload=BrightSpace&amp;v=20.22.2.35240"></script><script src="/d2l/common/math/MathML.js?v=20.22.2.35240"></script><script>document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe','130',false); });</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					var params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+							el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+							console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+
+<body class="w3-theme-14" onload="runDemo()">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">
+            <span class="w3-bar-item">Object Detector</span>
+        </div>
+
+        <div class="w3-container w3-content">
+            <p class="w3-opacity"><b>Randomly Selected Demo Image</b></p>
+            <div class="w3-panel w3-white w3-card w3-display-container"
+                 style="overflow: hidden">
+                <div style="float: left;">
+                    <img id="image" width="600"/>
+                </div>
+                <div id="objects" style="float: right;">
+                    <h5>Objects Detected:</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

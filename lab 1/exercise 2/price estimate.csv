@@ -1,0 +1,8 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Entity Recognition,0,0,0.00,USD,"Number of documents asynchronous (1), Average characters in a document asynchronous (400)"
+My Estimate,US East (Ohio),,Medical Protected Health Information Data Extraction and Identification (PHId) API,0,0.0056,0.07,USD,"Type of API call (Synchronous), Number of text (utf-8) documents (PHId) (1), Average characters in a document (PHId) (400)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"/>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>The reviews translator</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+</head>
+
+<body class="w3-theme-14">
+    <div style="min-width:400px">
+        <div class="w3-bar w3-large w3-theme-d4">
+            <span class="w3-bar-item">The reviews translator</span>
+        </div>
+
+        <div class="w3-container w3-content">
+            <p class="w3-opacity"><b>original text</b></p>
+			<p id="original_text" rows="4" cols="50">
+				La gabapentine est un trÃ¨s bon mÃ©dicament pour traiter les symptÃ´mes.
+				Questo farmaco potrebbe potenzialmente portare a effetti collaterali neurologici potenziati (specialmente in combinazione con il suo oxazepam).
+				Synthroid wirkt, wenn es tÃ¤glich morgens zum FrÃ¼hstÃ¼ck eingenommen wird. AuÃŸerdem sollte es besser auf nÃ¼chternen Magen eingenommen werden.
+				Oxazepam tiene efectos secundarios graves, lea atentamente la etiqueta antes de tomar.
+				Oksazepam uykusuzluÄŸumu tedavi etmemde iÅŸe yaradÄ±.
+				Î— ÏÎ±Î¼Î¹Ï€ÏÎ¯Î»Î· Î­Ï‡ÎµÎ¹ ÏƒÎ¿Î²Î±ÏÎ­Ï‚ Ï€Î±ÏÎµÎ½Î­ÏÎ³ÎµÎ¹ÎµÏ‚, Î½Î± ÎµÎ¯ÏƒÏ„Îµ Ï€ÏÎ¿ÏƒÎµÎºÏ„Î¹ÎºÎ¿Î¯ Ï€ÏÎ¹Î½ Ï„Î· Î»Î®ÏˆÎ·.
+			</p>
+	        <input class="w3-button w3-blue-grey" type="submit" value="translate" onclick="translate()"/>
+
+            <p class="w3-opacity"><b>translation</b></p>
+            <div id="view" class="w3-panel w3-white w3-card w3-display-container" style="display:none;">
+                <div style="float: right;">
+                    <h5>translated text:</h5>
+                <div id="translations"/>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

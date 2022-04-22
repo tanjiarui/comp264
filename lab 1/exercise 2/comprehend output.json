@@ -1,0 +1,60 @@
+{
+    "ResultList": [
+        {
+            "Index": 0,
+            "Entities": [
+                {
+                    "Score": 0.9985227584838867,
+                    "Type": "PERSON",
+                    "Text": "Terry Tan",
+                    "BeginOffset": 0,
+                    "EndOffset": 9
+                }
+            ]
+        },
+        {
+            "Index": 1,
+            "Entities": [
+                {
+                    "Score": 0.9963625073432922,
+                    "Type": "OTHER",
+                    "Text": "jtan73@my.centennialcollege.ca",
+                    "BeginOffset": 0,
+                    "EndOffset": 30
+                }
+            ]
+        },
+        {
+            "Index": 2,
+            "Entities": [
+                {
+                    "Score": 0.9778828024864197,
+                    "Type": "OTHER",
+                    "Text": "(236)-965-5200",
+                    "BeginOffset": 0,
+                    "EndOffset": 14
+                }
+            ]
+        },
+        {
+            "Index": 3,
+            "Entities": [
+                {
+                    "Score": 0.8310751914978027,
+                    "Type": "LOCATION",
+                    "Text": "941 Progress Ave, Toronto, ON",
+                    "BeginOffset": 0,
+                    "EndOffset": 29
+                },
+                {
+                    "Score": 0.47454723715782166,
+                    "Type": "OTHER",
+                    "Text": "M1G 3T8",
+                    "BeginOffset": 30,
+                    "EndOffset": 37
+                }
+            ]
+        }
+    ],
+    "ErrorList": []
+}

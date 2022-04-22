@@ -1,0 +1,6 @@
+aws comprehend batch-detect-entities --cli-input-json file://entity > terry\ comprehend\ output.json
+
+aws comprehendmedical detect-phi --text "Terry Tan\n
+jtan73@my.centennialcollege.ca\n
+(236)-965-5200\n
+941 Progress Ave, Toronto, ON M1G 3T8" > terry\ comprehend\ medical\ output.json

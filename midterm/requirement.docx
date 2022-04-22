@@ -1,0 +1,29 @@
+﻿Assume that you work as AI engineer at a pharmaceutical agency. The agency is looking to use cloud services, namely amazon web services, to carry out text translation for customer reviews related to their various medications (these reviews come in different languages).
+You are tasked to write a serverless application, in python, that will read the various customer reviews, made available continuously in a text file ( i.e. every time a new customer review is posted, a separate application updates the reviews text file). Then your application will read this file and translate each customer review into English; and  display them on a webpage.
+The webpage (frontend) should display the following, information:
+    1. Total # of customer reviews. 
+    2. Original text. (Note: it is ok to display the text as is, if your computer does not support the character set of the original language) 
+    3. Language of original text. 
+    4. Translated text in English. 
+In addition, the webpage should have a title, named  "The reviews translator"
+Your application is to use amazon translation webservices, and should cater for supporting only the language pairs that are supported by amazon. If the app encounters a case not supported then display a message "Language not supported" in the translated text.
+User experience:
+From the user's perspective, the application displays the translated reviews available in the reviews text file on the webpage (as specified above) when called, i.e. no user input is required.
+With every user re-fresh the application reloads the input file and updates the frontend.
+The webpage should have a nice simple look, that the user can understand.
+Technical requirements:
+    1. You need to use boto3 as an SDK, and chalice as a framework for a serverless app. All your code should be setup in a virtual environment under a directory named myreviews_firstiname. 
+    2. For the frontend webpage use JavaScript and html. 
+    3. All testing should be conducted on the local host. 
+Data 
+Download the sample reviews text file from here. Rename the file to reviews_firstname.txt
+Architecture:
+Draw two design diagrams namely an architecture diagram and a component interaction diagrams for your new serverless application, and attach them to your submission. Take into consideration the following points:
+    1. Re-usable components 
+    2. Separation of concerns 
+    3. Single responsibility principle 
+The application should be setup to use the RESTful api architecture. Name the endpoint /reviews. You will be running it on your Linux machine local host.
+Code testing:
+Local host of your Linux machine on the chalice port, as follows:
+- Use curl command to test the end point.  (Take a full screenshot, the screenshot should show the request and the response. Name it curl_test_reviews_firstname.png)
+-Use any web browser running on your local host, to call your webpage. (Take a full screenshot, the screenshot should illustrate the web-browser, the url, all tabs opened, the page contents and the machine date and time. Name  it web_test_reviews_firstname.png)

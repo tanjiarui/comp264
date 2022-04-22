@@ -1,0 +1,45 @@
+{
+    "Entities": [
+        {
+            "Id": 1,
+            "BeginOffset": 0,
+            "EndOffset": 5,
+            "Score": 0.5503608584403992,
+            "Text": "Terry",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "NAME",
+            "Traits": []
+        },
+        {
+            "Id": 2,
+            "BeginOffset": 12,
+            "EndOffset": 21,
+            "Score": 0.6318732500076294,
+            "Text": "jtan73@my",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "EMAIL",
+            "Traits": []
+        },
+        {
+            "Id": 3,
+            "BeginOffset": 45,
+            "EndOffset": 59,
+            "Score": 0.7858788371086121,
+            "Text": "(236)-965-5200",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "PHONE_OR_FAX",
+            "Traits": []
+        },
+        {
+            "Id": 4,
+            "BeginOffset": 62,
+            "EndOffset": 87,
+            "Score": 0.2660381495952606,
+            "Text": "941 Progress Ave, Toronto",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "ADDRESS",
+            "Traits": []
+        }
+    ],
+    "ModelVersion": "0.0.0"
+}
